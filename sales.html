@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fffaf5;
+        }
+
+        .sales-hero {
+            height: 75vh;
+            background: url('./images/background\ img.jpg') no-repeat center center/cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .sales-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .sales-hero .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .sales-section {
+            background: #fff3e6;
+            padding: 50px 0;
+        }
+
+        .sale-card img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .sale-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sale-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Nikkie Couture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arrivals.html">Arrivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sales.html">Sales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light btn-sm ms-2" href="shop.html">Shop
+                            Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sales-hero">
+        <div class="content">
+            <h1 class="display-5 fw-bold">Massive Sales!</h1>
+            <p class="lead">Limited-time offers on our best styles</p>
+        </div>
+    </section>
+
+    <!-- Sales Section -->
+    <section class="sales-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="sale-card text-center">
+                        <img src="./images/mididress.jpg" class="img-fluid"
+                            alt="Sale Item 1">
+                        <h5 class="mt-3">Silk Midi Dress</h5>
+                        <p class="text-danger">Now ₦9,000 <span
+                                class="text-muted text-decoration-line-through">₦18,000</span></p>
+                        <button class="btn btn-dark btn-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sale-card text-center">
+                        <img src="./images/blazerset.jpg" class="img-fluid"
+                            alt="Sale Item 2">
+                        <h5 class="mt-3">Formal Blazer Set</h5>
+                        <p class="text-danger">Now ₦14,000 <span
+                                class="text-muted text-decoration-line-through">₦25,000</span></p>
+                        <button class="btn btn-dark btn-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sale-card text-center">
+                        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" class="img-fluid"
+                            alt="Sale Item 3">
+                        <h5 class="mt-3">Street Style Jumpsuit</h5>
+                        <p class="text-danger">Now ₦10,500 <span
+                                class="text-muted text-decoration-line-through">₦21,000</span></p>
+                        <button class="btn btn-dark btn-sm">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            &copy; 2025 Nikkie Couture. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
